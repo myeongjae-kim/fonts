@@ -1,5 +1,10 @@
 # Fonts
 
+- [BadScript](./BadScript/)
+- [Inconsolata](./Inconsolata/)
+- [Iropke Batang](./IropkeBatangMSubset/)
+- [Source Sans Pro](./SourceSansPro/)
+
 웹 개발시에 자주 쓰이는 웹폰트를 모아놓았습니다. woff2, woff와 ttf 포맷의 글씨체, 그리고 글씨체를 base64로 인코딩한 css파일을 제공합니다.
 
 글씨체가 따르는 라이선스들은 개별 글씨체들의 디렉토리 안에 포함되어 있습니다.
