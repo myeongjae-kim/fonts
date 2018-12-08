@@ -1,9 +1,9 @@
 # Fonts
 
-- [BadScript](./BadScript/)
-- [Inconsolata](./Inconsolata/)
-- [Iropke Batang](./IropkeBatangMSubset/)
-- [Source Sans Pro](./SourceSansPro/)
+- [BadScript](https://hrzon.github.io/fonts/BadScript/)
+- [Inconsolata](https://hrzon.github.io/fonts/Inconsolata/)
+- [Iropke Batang](https://hrzon.github.io/fonts/IropkeBatangMSubset/)
+- [Source Sans Pro](https://hrzon.github.io/fonts/SourceSansPro/)
 
 웹 개발시에 자주 쓰이는 웹폰트를 모아놓았습니다. woff2, woff와 ttf 포맷의 글씨체, 그리고 글씨체를 base64로 인코딩한 css파일을 제공합니다.
 
