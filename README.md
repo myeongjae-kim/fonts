@@ -2,10 +2,10 @@
 
 - [BadScript](https://hrzon.github.io/fonts/BadScript/)
 - [Inconsolata](https://hrzon.github.io/fonts/Inconsolata/)
-- [Iropke Batang](https://hrzon.github.io/fonts/IropkeBatangMSubset/)
+- [이롭게 바탕](https://hrzon.github.io/fonts/IropkeBatangMSubset/)
 - [Source Sans Pro](https://hrzon.github.io/fonts/SourceSansPro/)
 
-웹 개발시에 자주 쓰이는 웹폰트를 모아놓았습니다. woff2, woff와 ttf 포맷의 글씨체, 그리고 글씨체를 base64로 인코딩한 css파일을 제공합니다.
+웹 개발시 자주 쓰는 웹폰트를 모아놓았습니다. base64로 인코딩한 글씨체가 담겨있는 css파일을 제공합니다. ttf, woff, woff2 포맷의 파일은 각 글씨체의 raw 디렉토리에 있습니다.
 
 글씨체가 따르는 라이선스들은 개별 글씨체들의 디렉토리 안에 포함되어 있습니다.
 
@@ -23,7 +23,7 @@ woff와 woff2 변환은 다음과 같은 프로그램을 사용했습니다.
 
 출처: [웹 폰트를 로컬 스토리지에 저장하는 기법 - 캐시 안정성 증가, 글꼴 깜빡임 현상 제거](https://mytory.net/2016/06/15/webfont-best-practice.html)
 
-사용하고 싶은 웹 폰트들의 css를 cat으로 연결한 뒤 자바스크립트를 통해 적용합니다.
+사용하고 싶은 글씨체의 css를 cat으로 연결한 뒤 자바스크립트를 통해 적용합니다.
 
 예를 들어 BadScript, Inconsolata, 이롭게 바탕, Source Sans Pro Light를 사용하고 싶다면,
 
@@ -152,10 +152,7 @@ cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-4
     }
   })();
 }());
-
 ```
-
-
 
 ## 참고
 
