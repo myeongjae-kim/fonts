@@ -31,7 +31,7 @@ woff와 woff2 변환은 다음과 같은 프로그램을 사용했습니다.
 
 출처: [웹 폰트를 로컬 스토리지에 저장하는 기법 - 캐시 안정성 증가, 글꼴 깜빡임 현상 제거](https://mytory.net/2016/06/15/webfont-best-practice.html)
 
-사용하고 싶은 글씨체의 css를 cat으로 연결한 뒤 자바스크립트를 통해 적용합니다.
+사용하고 싶은 글씨체의 css파일을 `cat`으로 연결한 뒤 자바스크립트를 통해 적용합니다.
 
 예를 들어 BadScript, Inconsolata, 이롭게 바탕, Source Sans Pro Light를 사용하고 싶다면,
 
