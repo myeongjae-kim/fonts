@@ -5,6 +5,14 @@
 - [이롭게 바탕](https://hrzon.github.io/fonts/IropkeBatangMSubset/)
 - [Source Sans Pro](https://hrzon.github.io/fonts/SourceSansPro/)
 
+- [배달의민족 한나체 Pro](https://hrzon.github.io/fonts/BM-HANNA-Pro)
+- [배달의민족 한나체 Air](https://hrzon.github.io/fonts/BM-HANNA-Air)
+- [배달의민족 기랑해랑체](https://hrzon.github.io/fonts/BM-KIRANGHAERANG)
+- [배달의민족 연성체](https://hrzon.github.io/fonts/BM-YEONSUNG)
+- [배달의민족 도현체](https://hrzon.github.io/fonts/BM-DoHyeon)
+- [배달의민족 한나는열한살체](https://hrzon.github.io/fonts/BM-HANNA-11yrs-old)
+- [배달의민족 주아체](https://hrzon.github.io/fonts/BM-JUA_TTF)
+
 웹 개발시 자주 쓰는 웹폰트를 모아놓았습니다. base64로 인코딩한 글씨체가 담겨있는 css파일을 제공합니다. ttf, woff, woff2 포맷의 파일은 각 글씨체의 raw 디렉토리에 있습니다.
 
 글씨체가 따르는 라이선스들은 개별 글씨체들의 디렉토리 안에 포함되어 있습니다.
