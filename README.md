@@ -36,9 +36,9 @@ woff와 woff2 변환은 다음과 같은 프로그램을 사용했습니다.
 예를 들어 BadScript, Inconsolata, 이롭게 바탕, Source Sans Pro Light를 사용하고 싶다면,
 
 ```bash
-cat ./BadScript/badscript-normal-400-woff2.css ./Inconsolata/inconsolata-normal-400-woff2.css ./IropkeBatangMSubset/iropke-batang-m-subset-woff2.css ./SourceSansPro/source-sans-pro-italic-300-woff2.css > fonts-woff2.css
+cat ./BadScript/badscript-normal-400-woff2.css ./Inconsolata/inconsolata-normal-400-woff2.css ./IropkeBatangMSubset/iropke-batang-m-subset-woff2.css ./SourceSansPro/source-sans-pro-normal-300-woff2.css > fonts-woff2.css
 
-cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-400-woff.css ./IropkeBatangMSubset/iropke-batang-m-subset-woff.css ./SourceSansPro/source-sans-pro-italic-300-woff.css > fonts-woff.css
+cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-400-woff.css ./IropkeBatangMSubset/iropke-batang-m-subset-woff.css ./SourceSansPro/source-sans-pro-normal-300-woff.css > fonts-woff.css
 ```
 
 이렇게 `fonts-woff2.css`와` fonts-woff.css`파일을 생성한 후 아래 자바스크립트 코드를 추가하면 됩니다.
