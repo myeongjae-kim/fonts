@@ -1,10 +1,6 @@
 # Fonts
 
-- [BadScript](https://hrzon.github.io/fonts/BadScript/)
-- [Inconsolata](https://hrzon.github.io/fonts/Inconsolata/)
 - [이롭게 바탕](https://hrzon.github.io/fonts/IropkeBatangMSubset/)
-- [Source Sans Pro](https://hrzon.github.io/fonts/SourceSansPro/)
-
 - [배달의민족 한나체 Pro](https://hrzon.github.io/fonts/BM-HANNA-Pro)
 - [배달의민족 한나체 Air](https://hrzon.github.io/fonts/BM-HANNA-Air)
 - [배달의민족 기랑해랑체](https://hrzon.github.io/fonts/BM-KIRANGHAERANG)
@@ -12,6 +8,10 @@
 - [배달의민족 도현체](https://hrzon.github.io/fonts/BM-DoHyeon)
 - [배달의민족 한나는열한살체](https://hrzon.github.io/fonts/BM-HANNA-11yrs-old)
 - [배달의민족 주아체](https://hrzon.github.io/fonts/BM-JUA_TTF)
+
+- [BadScript](https://hrzon.github.io/fonts/BadScript/)
+- [Inconsolata](https://hrzon.github.io/fonts/Inconsolata/)
+- [Source Sans Pro](https://hrzon.github.io/fonts/SourceSansPro/)
 
 웹 개발시 자주 쓰는 웹폰트를 모아놓았습니다. base64로 인코딩한 글씨체가 담겨있는 css파일을 제공합니다. ttf, woff, woff2 포맷의 파일은 각 글씨체의 raw 디렉토리에 있습니다.
 
@@ -41,7 +41,7 @@ cat ./BadScript/badscript-normal-400-woff2.css ./Inconsolata/inconsolata-normal-
 cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-400-woff.css ./IropkeBatangMSubset/iropke-batang-m-subset-woff.css ./SourceSansPro/source-sans-pro-normal-300-woff.css > fonts-woff.css
 ```
 
-이렇게 `fonts-woff2.css`와` fonts-woff.css`파일을 생성한 후 아래 자바스크립트 코드를 추가하면 됩니다.
+이렇게 `fonts-woff2.css`와`fonts-woff.css`파일을 생성한 후 아래 자바스크립트 코드를 추가하면 됩니다.
 
 ```javascript
 // https://mytory.net/2016/06/15/webfont-best-practice.html 참고
@@ -54,9 +54,9 @@ cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-4
     // 한 번 캐시하면 css 파일은 클라이언트 측에 저장한다.
     // 아래 woffPath 가 바뀌면 그 때 다시 받는다.
     // woff base64를 내장한 css
-    var woffPath = './fonts-woff.css';
+    var woffPath = "./fonts-woff.css";
     // woff2 base64를 내장한 css
-    var woff2Path = './fonts-woff2.css';
+    var woff2Path = "./fonts-woff2.css";
 
     // 간단한 이벤트 핸들러 함수
     function on(el, ev, callback) {
@@ -69,8 +69,8 @@ cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-4
 
     // localStorage 에 글꼴이 저장돼 있거나, 네이티브 브라우저 캐시를 이용해 저장했다면...
     if (
-      (window.localStorage && localStorage.fontCache)
-      || document.cookie.indexOf('fontCache') > -1
+      (window.localStorage && localStorage.fontCache) ||
+      document.cookie.indexOf("fontCache") > -1
     ) {
       // 캐시된 버전을 사용한다.
       injectFontsStylesheet();
@@ -87,9 +87,9 @@ cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-4
      */
     function isFileCached(href) {
       return (
-        window.localStorage
-        && localStorage.fontCache
-        && (localStorage.fontCacheFile === href)
+        window.localStorage &&
+        localStorage.fontCache &&
+        localStorage.fontCacheFile === href
       );
     }
 
@@ -97,16 +97,19 @@ cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-4
      * 실제 css 내용을 넣는 함수
      */
     function injectFontsStylesheet() {
-
-      var supportsWoff2 = (function (win) {
+      var supportsWoff2 = (function(win) {
         if (!("FontFace" in win)) {
           return false;
         }
 
-        var f = new FontFace('t', 'url( "data:application/font-woff2;base64,d09GMgABAAAAAADcAAoAAAAAAggAAACWAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABk4ALAoUNAE2AiQDCAsGAAQgBSAHIBtvAcieB3aD8wURQ+TZazbRE9HvF5vde4KCYGhiCgq/NKPF0i6UIsZynbP+Xi9Ng+XLbNlmNz/xIBBqq61FIQRJhC/+QA/08PJQJ3sK5TZFMlWzC/iK5GUN40psgqvxwBjBOg6JUSJ7ewyKE2AAaXZrfUB4v+hze37ugJ9d+DeYqiDwVgCawviwVFGnuttkLqIMGivmDg" ) format( "woff2" )', {});
-        f.load()['catch'](function () { });
+        var f = new FontFace(
+          "t",
+          'url( "data:application/font-woff2;base64,d09GMgABAAAAAADcAAoAAAAAAggAAACWAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABk4ALAoUNAE2AiQDCAsGAAQgBSAHIBtvAcieB3aD8wURQ+TZazbRE9HvF5vde4KCYGhiCgq/NKPF0i6UIsZynbP+Xi9Ng+XLbNlmNz/xIBBqq61FIQRJhC/+QA/08PJQJ3sK5TZFMlWzC/iK5GUN40psgqvxwBjBOg6JUSJ7ewyKE2AAaXZrfUB4v+hze37ugJ9d+DeYqiDwVgCawviwVFGnuttkLqIMGivmDg" ) format( "woff2" )',
+          {}
+        );
+        f.load()["catch"](function() {});
 
-        return f.status == 'loading' || f.status == 'loaded';
+        return f.status == "loading" || f.status == "loaded";
       })(window);
 
       // woff 지원 여부는 체크하지 않는다. 안드로이드 4.4 미만, IE9 미만은 woff를 지원하지 않는데, 워낙 소수라 일단 디텍트 코드를 넣지 않았다.
@@ -125,9 +128,9 @@ cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-4
         xhr.open("GET", fontPath, true);
 
         // ajax 에서 addEventListener 나 attachEvent 를 지원하지 않는 IE8을 위한 조치
-        xhr.onreadystatechange = function () {
+        xhr.onreadystatechange = function() {
           if (xhr.readyState === 4) {
-            if (xhr.responseText[0] === '<') {
+            if (xhr.responseText[0] === "<") {
               return;
             }
 
@@ -148,7 +151,7 @@ cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-4
      * @param text
      */
     function injectRawStyle(text) {
-      var style = document.createElement('style');
+      var style = document.createElement("style");
       // style.innerHTML 을 지원하지 않는 IE8을 위한 조치
       style.setAttribute("type", "text/css");
       if (style.styleSheet) {
@@ -156,10 +159,10 @@ cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-4
       } else {
         style.innerHTML = text;
       }
-      document.getElementsByTagName('head')[0].appendChild(style);
+      document.getElementsByTagName("head")[0].appendChild(style);
     }
   })();
-}());
+})();
 ```
 
 ## 참고
