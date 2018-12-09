@@ -164,8 +164,8 @@ cat ./BadScript/badscript-normal-400-woff.css ./Inconsolata/inconsolata-normal-4
 
 ## 참고
 
+[웹폰트 사용하기 (웹폰트 101)](http://wit.nts-corp.com/2017/02/13/4258)
+
 [웹 폰트를 로컬 스토리지에 저장하는 기법 - 캐시 안정성 증가, 글꼴 깜빡임 현상 제거](https://mytory.net/2016/06/15/webfont-best-practice.html)
 
 [스포카 한 산스 웹폰트로 사용하기](https://spoqa.github.io/2017/02/15/using-shs-as-webfonts.html)
-
-[웹폰트 사용하기 (웹폰트 101)](http://wit.nts-corp.com/2017/02/13/4258)
