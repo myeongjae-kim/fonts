@@ -1,17 +1,17 @@
 # Fonts
 
-- [이롭게 바탕](https://hrzon.github.io/fonts/IropkeBatangMSubset/)
-- [배달의민족 한나체 Pro](https://hrzon.github.io/fonts/BM-HANNA-Pro)
-- [배달의민족 한나체 Air](https://hrzon.github.io/fonts/BM-HANNA-Air)
-- [배달의민족 기랑해랑체](https://hrzon.github.io/fonts/BM-KIRANGHAERANG)
-- [배달의민족 연성체](https://hrzon.github.io/fonts/BM-YEONSUNG)
-- [배달의민족 도현체](https://hrzon.github.io/fonts/BM-DoHyeon)
-- [배달의민족 한나는열한살체](https://hrzon.github.io/fonts/BM-HANNA-11yrs-old)
-- [배달의민족 주아체](https://hrzon.github.io/fonts/BM-JUA_TTF)
+- [이롭게 바탕](https://myeongjae-kim.github.io/fonts/IropkeBatangMSubset/)
+- [배달의민족 한나체 Pro](https://myeongjae-kim.github.io/fonts/BM-HANNA-Pro)
+- [배달의민족 한나체 Air](https://myeongjae-kim.github.io/fonts/BM-HANNA-Air)
+- [배달의민족 기랑해랑체](https://myeongjae-kim.github.io/fonts/BM-KIRANGHAERANG)
+- [배달의민족 연성체](https://myeongjae-kim.github.io/fonts/BM-YEONSUNG)
+- [배달의민족 도현체](https://myeongjae-kim.github.io/fonts/BM-DoHyeon)
+- [배달의민족 한나는열한살체](https://myeongjae-kim.github.io/fonts/BM-HANNA-11yrs-old)
+- [배달의민족 주아체](https://myeongjae-kim.github.io/fonts/BM-JUA_TTF)
 
-- [BadScript](https://hrzon.github.io/fonts/BadScript/)
-- [Inconsolata](https://hrzon.github.io/fonts/Inconsolata/)
-- [Source Sans Pro](https://hrzon.github.io/fonts/SourceSansPro/)
+- [BadScript](https://myeongjae-kim.github.io/fonts/BadScript/)
+- [Inconsolata](https://myeongjae-kim.github.io/fonts/Inconsolata/)
+- [Source Sans Pro](https://myeongjae-kim.github.io/fonts/SourceSansPro/)
 
 웹 개발시 자주 쓰는 웹폰트를 모아놓았습니다. base64로 인코딩한 글씨체가 담겨있는 css파일을 제공합니다. ttf, woff, woff2 포맷의 파일은 각 글씨체의 raw 디렉토리에 있습니다.
 
